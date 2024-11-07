@@ -44,7 +44,7 @@
   };
 
   # Enable CUPS to print documents.
-  services.printing.enable = true;
+  # services.printing.enable = true;
 
   # Enable sound with pipewire.
   hardware.pulseaudio.enable = false;
@@ -72,12 +72,13 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     #  thunderbird
+      nushell
     ];
     shell = pkgs.nushell;
   };
 
   # Install firefox.
-  # programs.firefox.enable = true;
+  programs.firefox.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -91,6 +92,8 @@
       git
     ];
     gnome.excludePackages = with pkgs; [
+      epiphany
+      gnome-tour
       gnome.geary
     ];
   };
