@@ -64,5 +64,10 @@ power-saver-profile-on-low-battery=false
 sleep-inactive-ac-timeout=1800
 sleep-inactive-battery-timeout=1800
 
+[org/gnome/shell]
+disabled-extensions=['apps-menu@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['drive-menu@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['kitty.desktop', 'org.gnome.Nautilus.desktop', 'google-chrome.desktop']
+
 [org/gtk/gtk4/settings/file-chooser]
 show-hidden=true
