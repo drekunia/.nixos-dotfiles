@@ -27,9 +27,25 @@
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
+    audacity
+    # code-cursor
+    dbeaver-bin
     dconf2nix
+    discord
+    docker
     google-chrome
+    meld
+    neovim
+    obs-studio
+    obsidian
+    p7zip
+    shotcut
+    spotify
+    tmux
+    virtualbox
     vlc
+    vscode
+    zoom-us
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
