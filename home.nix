@@ -95,6 +95,7 @@
     };
 
     gh.enable  = true;
+    kitty.enable = true;
   };
 
   # Let Home Manager install and manage itself.
