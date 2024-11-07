@@ -5,12 +5,21 @@ with lib.hm.gvariant;
 
 {
   dconf.settings = {
+    "org/gnome/Snapshot" = {
+      capture-mode = "picture";
+      is-maximized = false;
+      play-shutter-sound = false;
+      show-composition-guidelines = true;
+      window-height = 640;
+      window-width = 800;
+    };
+
     "org/gnome/desktop/calendar" = {
       show-weekdate = true;
     };
 
     "org/gnome/desktop/datetime" = {
-      automatic-timezone = false;
+      automatic-timezone = true;
     };
 
     "org/gnome/desktop/interface" = {
@@ -42,6 +51,23 @@ with lib.hm.gvariant;
       edge-tiling = true;
     };
 
+    "org/gnome/nautilus/icon-view" = {
+      captions = [ "size" "date_modified" "owner" ];
+    };
+
+    "org/gnome/nautilus/list-view" = {
+      use-tree-view = true;
+    };
+
+    "org/gnome/nautilus/preferences" = {
+      date-time-format = "detailed";
+      default-folder-viewer = "icon-view";
+      migrated-gtk-settings = true;
+      search-filter-time-type = "last_modified";
+      show-create-link = true;
+      show-delete-permanently = true;
+    };
+
     "org/gnome/settings-daemon/plugins/media-keys" = {
       custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" ];
     };
@@ -59,9 +85,8 @@ with lib.hm.gvariant;
       sleep-inactive-battery-timeout = 1800;
     };
 
-    "org/gnome/shell" = {
-      last-selected-power-profile = "performance";
-      welcome-dialog-last-shown-version = "46.2";
+    "org/gtk/gtk4/settings/file-chooser" = {
+      show-hidden = true;
     };
 
   };
